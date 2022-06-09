@@ -5,8 +5,6 @@
 # dcfsdfsf
 import pandas as pd
 import streamlit as st
-import plotly.express as px
-import matplotlib.pyplot as plt
 import numpy as np
 
 st.set_page_config(layout="wide")
