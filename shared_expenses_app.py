@@ -2,7 +2,7 @@
 # their days in charge and therit total expenses over time.
 # shared_expenses will calculate a mean expens value person/day and tell everyone how much they have to pay
 
-
+# dcfsdfsf
 import pandas as pd
 import streamlit as st
 import plotly.express as px
