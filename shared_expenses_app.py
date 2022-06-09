@@ -18,7 +18,7 @@ If you have this information you can use this dashboard to easily calculate the 
 
 st.markdown("""---""")
 
-# 
+
 # slider for number of persons, text iput or total days
 
 left_column, right_column = st.columns(2)
