@@ -33,7 +33,9 @@ pplcols = st.columns(num_ppl)
 ppl=[]
 
 for i, x in enumerate(pplcols):
-    ppl.append(x.selectbox(f"Person # {i+1}",['Sophia','Joanna','Georg','Flo','Konrad','Ida','Nuri','Surname8', 'Surname9', 'Surname10', 'Surname11', 'Surname12', 'Surname13', 'Surname14', 'Surname15', 'Surname16', 'Surname17', 'Surname18', 'Surname19', 'Surname20'],key=i,index=i))
+    name_list=['Sophia','Joanna','Georg','Flo','Konrad','Ida','Nuri','Surname8', 'Surname9', 'Surname10', 'Surname11', 'Surname12', 'Surname13', 'Surname14', 'Surname15', 'Surname16', 'Surname17', 'Surname18', 'Surname19', 'Surname20']
+    
+    ppl.append(x.text_input(f"Person # {i+1}",name_list[i],key=i))
 
 days ={}
 spend={}
