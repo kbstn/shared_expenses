@@ -51,6 +51,12 @@ for i, x in enumerate(pplcols):
     # input field for the money spend by the person
     spend[person]=x.number_input('money spend by '+person,step=10,key=i)
 
+    # insert a warning if your number is higher than the total number of days defined
+    if days[person] > total_days:
+        x.write('**Warning:**') 
+        x.write('Number of days for '+person+' is higher than total days, only do this if you sum up multiple people in one entity!')
+
+
 # calcualte sums for days and money spend
 total_ppl_days = sum(days.values())
 total_spend = sum(spend.values())
